@@ -15,16 +15,26 @@
   padding: 20px;
   background-color: teal;
   border-radius: 20px;
-  /* animation:changeBackgroundColor 1s cubic-bezier(0.1,0.25,0.1,1) 0.2s infinite alternate ; */
-}
-
-.hero-home-button:hover {
-  /* animation:changeBackgroundColor 1s cubic-bezier(0.1,0.25,0.1,1) 0.2s infinite alternate ; */
   animation-name: changeBackgroundColor;
   animation-duration: 1000ms;
   animation-timing-function: cubic-bezier(0.1, 0.25, 0.1, 1);
   animation-delay: 1000ms;
   animation-iteration-count: 0.5;
+  animation-direction: reverse;
+  animation-fill-mode: forwards;
+  /* animation:changeBackgroundColor 1s cubic-bezier(0.1,0.25,0.1,1) 0.2s infinite alternate ; */
+}
+
+.hero-home-button:hover {
+  /* animation:changeBackgroundColor 1s cubic-bezier(0.1,0.25,0.1,1) 0.2s infinite alternate ; */
+  /* animation-name: changeBackgroundColor;
+  animation-duration: 1000ms;
+  animation-timing-function: cubic-bezier(0.1, 0.25, 0.1, 1);
+  animation-delay: 1000ms;
+  animation-iteration-count: 0.5;
+  animation-direction: reverse;
+  animation-fill-mode: backwards; */
+  animation-play-state: paused;
 }
 @keyframes changeBackgroundColor {
   0% {
